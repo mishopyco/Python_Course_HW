@@ -7,7 +7,7 @@
 try:
    a = input('Enter first two digit number:')
    b = input('Enter second two digit number:')
-   if (len(a))!=2 or (len(b)) !=2: #checks if the input is valid 
+   if (len(a))!=2 or (len(b)) !=2 or int(a)<0 or int(b)<0: #checks if the input is valid 
       raise
 except:
    print('Invalid input')
